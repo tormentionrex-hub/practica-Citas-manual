@@ -1,29 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dentist Booking - Dashboard</title>
+    <link rel="stylesheet" href="../styles/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
 
-<h1 id="bienvenida"></h1>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="../assets/logo.png" alt="Clinic Logo">
+            <span>Dental Studio</span>
+        </div>
+        <div class="nav-links">
+            <a href="dashboard.html"><i class="fas fa-home"></i> Inicio</a>
+            <a href="citas.html"><i class="fas fa-calendar-check"></i> Mis Citas</a>
+            <a href="login.html"><i class="fas fa-sign-out-alt"></i> Salir</a>
+        </div>
+    </nav>
+
+    <h1 id="bienvenida"></h1>
+
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <a href="citas.html" class="nav-btn-link"
+            style="display: inline-block; background: var(--secondary-color); color: white; padding: 10px 20px; border-radius: 30px; margin: 0; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
+            <i class="fas fa-calendar-alt"></i> Ver mis citas
+        </a>
+    </div>
 
 
-<h2>Crear cita</h2>
+    <h2>Crear cita</h2>
 
 
-<form id="formCita">
-<input type="date" id="fecha" required>
-<input type="time" id="hora" required>
-<button type="submit">Crear cita</button>
-</form>
+    <form id="formCita">
+        <input type="date" id="fecha" required>
+        <input type="time" id="hora" required>
+        <button type="submit">Crear cita</button>
+    </form>
 
 
-<p id="mensaje"></p>
+    <p id="mensaje"></p>
 
 
 
     <script src="../javascript/dashboard.js"></script>
 </body>
+
 </html>

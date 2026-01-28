@@ -17,13 +17,13 @@ console.log("Login:", email, password);
 console.log("Usuarios en el sistema:", usuarios);
 
 // buscar al usuario por el correo
-let usuarioValido = usuarios.find(u => u.email === email);   // find busca dentro del array usuarios si hay alguien con ese mismo correo
+let usuarioValido = usuarios.find(u => u.email === email);   // find busca dentro del array usuarios si hay alguien con ese mismo correo (asi se evita que haya )
 
 
 console.log("El usuario valido es:", usuarioValido); 
 // usuarioValido es el usuario que se encuentra con el correo ingresado
 
-if (!usuarioValido) {
+if (!usuarioValido ) {
     mensaje.textContent = "Usuario no encontrado"; // si el correo no existe
     return;
 }

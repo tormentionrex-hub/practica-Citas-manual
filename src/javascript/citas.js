@@ -41,13 +41,13 @@ listaCitas.appendChild(li);
 
 
 // evento de escucha deberia escuchar clicks dentro de la lista
-listaCitas.addEventListener("click", function(e){
+listaCitas.addEventListener("click", function(Evento){
 
     // verifica si lo que se hizo click fue un botón
-if(e.target.tagName === "BUTTON"){
+if(Evento.target.tagName === "BUTTON"){
 
     //Obtengo el index guardado en el botón
-let index = e.target.getAttribute("data-index");
+let index = Evento.target.getAttribute("data-index");
 
 
 // aqui se obtienen las citas globales osea se traen todas las citas del sistema
